@@ -16,10 +16,149 @@
 
 body{
 font-family: 微软雅黑, Verdana, sans-serif, 宋体;
+background-image: url(bg.png);
 }
 
+/* nav start */
 #nav{
 width:100%;
 height:30px;
 background-color:#15a230;
 }
+
+#nav ul.menu li{
+float:left;
+padding:0 10px;
+list-style:none;
+margin:0px;
+}
+
+#nav ul.menu li a{
+line-height:30px;
+color:white;
+text-decoration:none;
+}
+
+#nav ul.menu li a:hover{
+color:#eee;
+}
+
+#nav ul.menu li.dropdown{
+background:url('down3.gif') no-repeat right 14px;
+}
+
+#nav ul.menu ul.sub-menu{
+position:absolute;
+margin-top:-3px;
+margin-left:0px;
+overflow: hidden;
+border:1px solid #15a230;
+border-top:none;
+display:none;
+}
+
+#nav ul.menu ul.sub-menu li{
+clear:both;
+display:block;
+line-height:3px;
+margin:0px;
+width:80px;
+background-color:#fff;
+}
+
+#nav ul.menu ul.sub-menu li:hover{
+background-color:#15a230;
+}
+
+#nav ul.menu ul.sub-menu li a{
+color:#15a230;
+padding:0 5px;
+}
+
+#nav ul.menu ul.sub-menu li:hover a{
+color:#fff;
+}
+
+/* nav end */
+
+
+/* body start */
+#body{
+margin-top:10px;
+min-height:600px; 
+height:auto !important; 
+height:600px; 
+overflow:visible;
+}
+/* body end */
+
+
+/* search start */
+#search{
+margin-top:100px;
+}
+
+#search .logo{
+font-size:64px;
+font-family: 'Keania One'
+}
+#search .logo .desc{
+font-size:14px;
+background-color:#15a230;
+color:#fff;
+}
+
+#search input{
+width:400px;
+height:48px;
+font-size:42px;
+float:left;
+margin:0px;
+padding:0px;
+border:1px solid #15a230;
+}
+
+#search button{
+height:50px;
+line-height:48px;
+width:120px;
+border:1px solid #15a230;
+background-color:#15a230;
+cursor:pointer;
+font-size:24px;
+color:#fff;
+}
+
+#search button:hover{
+color:#eee;
+background-color:#35a622;
+}
+
+/* search end */
+
+/* footer start */
+#footer{
+width:100%;
+height:200px;
+border-top:1px solid #eee;
+margin-top:10px;
+}
+#footer p{
+float:right;
+padding:5px 10px;
+color:#444;
+}
+#footer ul.links{
+float:right;
+}
+#footer ul.links li{
+float:left;
+list-style:none;
+margin:0px;
+padding:5px 10px;
+}
+#footer ul.links li a{
+text-decoration:none;
+color:#15a230;
+}
+/* footer end*/

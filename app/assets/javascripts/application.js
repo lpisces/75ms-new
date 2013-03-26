@@ -12,3 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+
+$(function(){
+  $('#nav ul.menu li').mouseover(function() {
+    $(this).children('ul.sub-menu').show();
+  });
+  $('#nav ul.menu li').mouseout(function() {
+    $(this).children('ul.sub-menu').hide();
+  });
+});

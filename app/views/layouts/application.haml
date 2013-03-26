@@ -4,3 +4,7 @@
     = render 'share/head'
   %body
     = render 'share/nav'
+    .container_25
+      .grid_25#body= yield
+    .clearfix
+    = render 'share/footer'
