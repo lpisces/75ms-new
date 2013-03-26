@@ -1,4 +1,10 @@
 New75ms::Application.routes.draw do
+  get "home/index"
+
+  get "static_page/about"
+
+  get "static_page/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
