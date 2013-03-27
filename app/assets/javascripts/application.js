@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require holder
 
 $(function(){
   $('#nav ul.menu li').mouseover(function() {
