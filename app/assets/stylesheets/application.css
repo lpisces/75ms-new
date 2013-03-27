@@ -102,6 +102,7 @@ margin-top:100px;
 font-size:64px;
 font-family: 'Keania One'
 }
+
 #search .logo .desc{
 font-size:14px;
 background-color:#15a230;
@@ -111,7 +112,10 @@ color:#fff;
 #search input{
 width:400px;
 height:48px;
-font-size:42px;
+font-size:32px;
+font-weight:bold;
+color:#15a230;
+padding:3px;
 float:left;
 margin:0px;
 padding:0px;
@@ -133,6 +137,48 @@ color:#fff;
 color:#eee;
 background-color:#35a622;
 }
+
+#advanced_search{
+padding: 5px 0 15px 0;
+border-bottom:1px solid #eee;
+background-color:#f5f5f5;
+height:48px;
+margin: 0 0 0 0;
+}
+
+#advanced_search .form{
+margin-top:15px;
+}
+
+#advanced_search input{
+width:300px;
+height:24px;
+font-size:16px;
+font-weight:bold;
+color:#15a230;
+padding:3px;
+float:left;
+margin:0px;
+padding:0px;
+border:1px solid #15a230;
+}
+
+#advanced_search button{
+height:26px;
+line-height:24px;
+width:60px;
+border:1px solid #15a230;
+background-color:#15a230;
+cursor:pointer;
+font-size:12px;
+color:#fff;
+}
+
+#advanced_search .logo{
+font-size:36px;
+font-family: 'Keania One';
+}
+
 
 /* search end */
 

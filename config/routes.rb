@@ -1,5 +1,7 @@
 New75ms::Application.routes.draw do
-  get "home/index"
+  root :to => 'search#index'
+
+  match 'result' => 'search#result'
 
   get "static_page/about"
 
