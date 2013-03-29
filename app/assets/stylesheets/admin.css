@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require reset
+ *= require grid
+ *= require text
+ */
+
+body{
+font-family: 微软雅黑, Verdana, sans-serif, 宋体;
+background-image: url(bg.png);
+}
+
+/* nav start */
+#nav{
+width:100%;
+height:30px;
+background-color:#15a230;
+}
+
+#nav ul.menu li{
+float:left;
+padding:0 10px;
+list-style:none;
+margin:0px;
+}
+
+#nav ul.menu li a{
+line-height:30px;
+color:white;
+text-decoration:none;
+}
+
+#nav ul.menu li a:hover{
+color:#eee;
+}
+
+#nav ul.menu li.dropdown{
+background:url('down3.gif') no-repeat right 14px;
+}
+
+#nav ul.menu ul.sub-menu{
+position:absolute;
+margin-top:-3px;
+margin-left:0px;
+overflow: hidden;
+border:1px solid #15a230;
+border-top:none;
+display:none;
+}
+
+#nav ul.menu ul.sub-menu li{
+clear:both;
+display:block;
+line-height:3px;
+margin:0px;
+width:80px;
+background-color:#fff;
+}
+
+#nav ul.menu ul.sub-menu li:hover{
+background-color:#15a230;
+}
+
+#nav ul.menu ul.sub-menu li a{
+color:#15a230;
+padding:0 5px;
+}
+
+#nav ul.menu ul.sub-menu li:hover a{
+color:#fff;
+}
+
+/* nav end */
+
+
+/* body start */
+#body{
+margin-top:10px;
+min-height:600px; 
+height:auto !important; 
+height:600px; 
+overflow:visible;
+}
+
+#body table{
+}
+
+#body table th{
+padding:5px;
+text-align:left;
+background-color:#eee;
+border-left:1px solid #fff;
+}
+
+#body table td{
+padding:5px;
+text-align:left;
+border:1px solid #eee;
+}
+
+#body a.button{
+background-color:#15a230;
+color:#fff;
+padding:2px;
+margin:3px;
+text-decoration:none;
+}
+
+#body a.button:hover{
+color:#eee;
+}
+/* body end */
+
+
+
+/* search end */
+
+/* footer start */
+#footer{
+width:100%;
+height:200px;
+border-top:1px solid #eee;
+margin-top:10px;
+}
+#footer p{
+float:right;
+padding:5px 10px;
+color:#444;
+}
+#footer ul.links{
+float:right;
+}
+#footer ul.links li{
+float:left;
+list-style:none;
+margin:0px;
+padding:5px 10px;
+}
+#footer ul.links li a{
+text-decoration:none;
+color:#15a230;
+}
+/* footer end*/

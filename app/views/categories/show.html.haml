@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @category.name
+%p
+  %b Is parent:
+  = @category.is_parent
+%p
+  %b Parent:
+  = @category.parent_id
+
+= link_to '编辑', edit_category_path(@category)
+\|
+= link_to '返回', categories_path

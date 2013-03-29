@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Username:
+  = @user.username
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Is admin:
+  = @user.is_admin
+
+= link_to '编辑', edit_user_path(@user)
+\|
+= link_to '返回', users_path

@@ -1,0 +1,23 @@
+%h1 brands 列表
+
+%table
+  %tr
+    %th Name
+    %th Logo
+    %th Summary
+    %th
+    %th
+    %th
+
+  - @brands.each do |brand|
+    %tr
+      %td= brand.name
+      %td= brand.logo
+      %td= brand.summary
+      %td= link_to '展示', brand
+      %td= link_to '修改', edit_brand_path(brand)
+      %td= link_to '删除', brand, :method => :delete, :data => { :confirm => '确定吗?' }
+
+%br
+
+= link_to '新 Brand', new_brand_path

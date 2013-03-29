@@ -1,4 +1,16 @@
 New75ms::Application.routes.draw do
+  resources :shops
+
+
+  resources :brands
+
+
+  resources :categories
+
+
+  resources :users
+
+
   root :to => 'search#index'
 
   match 'result' => 'search#result'

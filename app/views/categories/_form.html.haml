@@ -1,0 +1,19 @@
+= form_for @category do |f|
+  - if @category.errors.any?
+    #error_explanation
+      %h2= "#有{@category.errors.count}个错误"
+      %ul
+        - @category.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :is_parent
+    = f.check_box :is_parent
+  .field
+    = f.label :parent_id
+    = f.number_field :parent_id
+  .actions
+    = f.submit '保存'

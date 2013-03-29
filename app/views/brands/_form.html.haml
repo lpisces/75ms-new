@@ -1,0 +1,19 @@
+= form_for @brand do |f|
+  - if @brand.errors.any?
+    #error_explanation
+      %h2= "#有{@brand.errors.count}个错误"
+      %ul
+        - @brand.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :logo
+    = f.text_field :logo
+  .field
+    = f.label :summary
+    = f.text_area :summary
+  .actions
+    = f.submit '保存'

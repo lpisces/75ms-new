@@ -1,0 +1,22 @@
+= form_for @shop do |f|
+  - if @shop.errors.any?
+    #error_explanation
+      %h2= "#有{@shop.errors.count}个错误"
+      %ul
+        - @shop.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :url
+    = f.text_field :url
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :logo
+    = f.text_field :logo
+  .actions
+    = f.submit '保存'

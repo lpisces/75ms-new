@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @shop.name
+%p
+  %b Url:
+  = @shop.url
+%p
+  %b Description:
+  = @shop.description
+%p
+  %b Logo:
+  = @shop.logo
+
+= link_to '编辑', edit_shop_path(@shop)
+\|
+= link_to '返回', shops_path
